@@ -25,12 +25,12 @@ This application uses different npm modules for both functionallity and appearan
 ![Openning Command for Manager](/Images/3.png)
 * The loading screen for managers is disctinct to the customer because there is no option to create account. Instead a user most be manually added to the managers datable.
 ![Manager Login](/Images/4.png)
-*Once access is given, the manager menu contains 5 command prompts:
-* View Products for Sale
-* View Low Inventory
-* Add to Inventory
-* Add New Product
-* Exit
+* Once access is given, the manager menu contains 5 command prompts:
+    * View Products for Sale
+    * View Low Inventory
+    * Add to Inventory
+    * Add New Product
+    * Exit
 ![Manager Menu](/Images/5.png)
 
 * With these tools managers can have an easy access to the market's inventory.
