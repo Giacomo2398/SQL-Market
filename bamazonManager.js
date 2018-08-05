@@ -263,8 +263,9 @@ function addProduct(){
         },
         {
             name:"Department_name",
-            type:"input",
-            message:"Department Name: "
+            type:"list",
+            message:"Select Department: ",
+            choices: ["Groceries","Electronics","Men's Apparel","Women Apparel","Home & Kitchen", "Other"]
         },
         {
             name:"Price",
@@ -294,7 +295,7 @@ function addProduct(){
             console.log("-----------------------------------------------------------------------------------------------------");
             console.log("Product added");
             console.log("-----------------------------------------------------------------------------------------------------");
-            if(answer.question == true){
+            if(question == true){
                 addProduct();
             }else{
                 back();
