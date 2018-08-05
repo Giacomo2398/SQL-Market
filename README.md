@@ -16,21 +16,21 @@ This application uses different npm modules for both functionallity and appearan
 ###Functionalities
 ### Being a Customer!
 *To access the market as a customer run ```node bamazonCustomer.js````
-![Opening Command for Customer](/images/1.png)
+![Opening Command for Customer](/Images/1.png)
 *After creating an account with the assistance of the prompts, access to the market is avaliable.
-![Market Login & Product Table](/images/2.png)
+![Market Login & Product Table](/Images/2.png)
 
 ### Being a Manager!
 *To gain access to the market as a manager run ```node bamazonManager.js```
-![Openning Command for Manager](/images/3.png)
+![Openning Command for Manager](/Images/3.png)
 *The loading screen for managers is disctinct to the customer because there is no option to create account. Instead a user most be manually added to the managers datable.
-![Manager Login](/images/4.png)
+![Manager Login](/Images/4.png)
 *Once access is given, the manager menu contains 5 command prompts:
     * View Products for Sale
     * View Low Inventory
     * Add to Inventory
     * Add New Product
     * Exit
-![Manager Menu](/images/5.png)
+![Manager Menu](/Images/5.png)
 
 *With these tools managers can have an easy access to the market's inventory.
