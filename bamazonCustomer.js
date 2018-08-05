@@ -1,3 +1,6 @@
+require("dotenv").config();
+
+const keys = require('./keys.js');
 const mysql = require("mysql");
 const inquirer = require("inquirer");
 const figlet = require('figlet');
@@ -6,10 +9,10 @@ const Table = require("cli-table");
 
 var connection = mysql.createConnection({
     host:"localhost",
-    port: 3306,
+    port: process.env.SQL_PORT || 3306,
     user:'root',
-    password: "Gfg020398*",
-    database: "bamazon"
+    password: process.env.SQL_Password,
+    database: process.env.SQl_Database
 });
 
 connection.connect(function(err){
@@ -235,8 +238,10 @@ function itemFinder(){
 
 function confirmation(ID, amount, price){
     let total = parseInt(amount) * parseInt(price);
+    console.log("\n-----------------------------------------------------------------------------------------------------");
     console.log("Your total for this purchase is: $" + total);
     console.log("Please provide the following information to finish this purchase:");
+    console.log("\n-----------------------------------------------------------------------------------------------------");
     inquirer.prompt([
         {
             name:"username",
