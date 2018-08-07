@@ -1,4 +1,4 @@
-require("dotenv").config();
+
 
 const keys = require('./keys.js');
 const mysql = require("mysql");
@@ -12,7 +12,7 @@ var connection = mysql.createConnection({
     port: process.env.SQL_PORT || 3306,
     user:'root',
     password: process.env.SQL_Password,
-    database: process.env.SQl_Database
+    database: process.env.SQL_Database
 });
 
 connection.connect(function(err){
@@ -265,7 +265,7 @@ function addProduct(){
             name:"Department_name",
             type:"list",
             message:"Select Department: ",
-            choices: ["Groceries","Electronics","Men's Apparel","Women Apparel","Home & Kitchen", "Other"]
+            choices: ["Groceries","Electronics","Men Clothing","Women Clothing","Home & Kitchen", "Other"]
         },
         {
             name:"Price",
